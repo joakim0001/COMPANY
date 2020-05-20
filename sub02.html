@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<title>LG기업홈페이지sub02</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+				$(".toggleMenu").click(function(){
+					var myClass = $(this).attr("class");
+					console.log(myClass)
+					if(myClass == "toggleMenu"){
+						$(".toggleMenu").addClass("change");
+							/*$("#main_menu").animate({left:0},300)*/
+							$("#main-menu").stop().animate({left:0},300)
+
+					}else{
+						$(".toggleMenu").removeClass("change");
+							/*$("#main_menu").animate({left:"-100%"},300);*/
+							$("#main-menu").stop().animate({left:"-100%"},300)
+					}
+				});
+					/*$(document).ready(function(){});*/
+				/*$(window).on("resize",function(){});*/
+				$(window).resize(function(){
+					var WSize = $(window).width();
+					console.log(WSize);
+					if(WSize > 960){
+						$("#header_top").find(".toggleMenu").
+							removeClass("change");
+					}else{
+						$("#header_top").find(".toggleMenu").
+							removeClass("change");
+						$("#main-menu").css({left:"-100%"});
+					}
+
+				});
+			
+
+		});
+		
+	</script>
+	
+	
+</head>
+<body>
+<!--헤더영역-->
+<header id="sub02main-hd">
+	<div id="s02main-top" class="clearfix">
+	<h1>
+		<a href="index.html"><img src="images/logo1.png" alt="로고이미지"></a>
+		<p>LG</p>
+	</h1>
+	<nav id="main-menu">
+		<ul class="clearfix">
+			<li><a href="sub01.html" >LG소개</a>
+               <div class="bar"></div>
+                <ul class="submenu clearfix">
+                    <li><a href="sub01.html">전자계열</a></li>
+                    <li><a href="sub01_2.html">화학계열</a></li>
+                    <li><a href="sub01_3.html">통신/서비스계열</a></li>
+                    <li><a href="sub01_4.html">지주회사</a></li>
+                </ul>
+			    
+			</li>
+			<li><a href="sub02.html" class="active">CRS</a>
+			     <div class="bar"></div>
+			     <ul class="submenu clearfix">
+                    <li><a href="sub02.html">비젼</a></li>
+                    <li><a href="sub02_2.html">지속가능경영</a></li>
+                    <li><a href="sub02_3.html">사회공헌</a></li>
+                    <li><a href="sub02-4.html">공익재단</a></li>
+                </ul>
+			</li>
+			<li><a href="sub03.html">IR</a>
+			    <div class="bar"></div>
+			    <ul class="submenu clearfix">
+                    <li><a href="sub03.html">기업지배구도</a></li>
+                    <li><a href="sub03_2.html">재무정보</a></li>
+                    <li><a href="sub03_3.html">공시정보</a></li>
+                    <li><a href="sub03_4.html">IR자료실</a></li>
+                </ul>
+			</li>
+			<li><a href="sub04.html">미디어</a>
+			    <div class="bar"></div>
+			    <ul class="submenu clearfix">
+                    <li><a href="sub04.html">보도자료</a></li>
+                    <li><a href="sub04_2.html">동영상</a></li>
+                    <li><a href="sub04_3.html">매거진</a></li>
+                </ul>
+			</li>
+			<li><a href="sub05.html">채용</a>
+			    <div class="bar"></div>
+			    <ul class="submenu clearfix">
+                    <li><a href="sub05.html">채용정보</a></li>
+                </ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="toggleMenu">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	</div>
+	
+</div>
+	<h2>비전</h2>
+</header>
+
+<!--sub01menu-->
+<nav class="sub02menu">
+	<ul class="clearfix">
+		<li><a href="sub02.html" class="active">비전</a></li>
+		<li><a href="sub02_2.html">지속가능경영</a></li>
+		<li><a href="sub02_3.html">사회공헌</a></li>
+		<li><a href="sub02-4.html">공익재단</a></li>
+		
+	</ul>
+</nav>
+
+
+<div class="sub02container">
+	<div class="sub02content1" >
+		<div class="sb2content1" id="sb1" >
+			<img src="images/sub2-1.png" alt="철학이미지">
+		    <img src="images/sub2-1-2.png" alt="">
+
+		</div>
+    </div>
+		
+</div>
+	
+
+
+<!-- subfooter -->
+<div class="subfooter">
+	<div class="sub-centent">
+		<nav class="sbft-menu">
+			<ul class="clearfix">
+				<li><a href="">유튜브</a></li>
+				<li><a href="">네이버포스트</a></li>
+				<li><a href="">페이스북</a></li>
+				<li><a href="">인스타그램</a></li>
+				<li><a href="">LG소셜미디어맵</a></li>
+			</ul>
+		</nav>
+		<div class="subft-bt">
+			<ul class="clearfix">
+				<li class="sbft">
+				<a href="">
+					<img src="images/logo2.png" alt="로고이미지">
+					<h3>LG</h3>
+				</a>
+					
+				</li >
+				<li class="sbft-btmenu ">
+				<a href="" class="mu1">
+					<h3>사이트맵</h3>
+				</a>
+				<a href="" class="mu2">
+					<h3>고객센터</h3>
+				</a>
+				</li>
+				<p>ⓒLG커뮤니케이션,S&I코퍼레이션</p>
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+			
+				
+			
+
+			
+		
+		
+</body>
+</html>
